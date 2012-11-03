@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PixelForge</title>
+
+        <link href="http://fonts.googleapis.com/css?family=Merriweather:400,900,300,700" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>pixel<span>forge</span></h1>
+            <p class="description">An experimental Javascript app to convert images into &lt;tables&gt;<br/>Why you say? Because you can.</p>
+        </header>
+
+        <div role="main">
+
+            <div class="upload">
+                <p>Drag image here</p>
+                <input type="file" id="imageloader" class="imageloader" name="imageloader"/>
+            </div>
+
+            <div class="output-table"></div>
+            <ul class="actions">
+                <li><a class="show-markup" href="#">Show markup</a></li>
+                <li><a class="start-over" href="">Start over</a></li>
+                <li class="final-width">Target width (px): <input type="text" name="finalwidth" /></li>
+                <li class="blocksize">Cell size: <input type="text" name="blocksize"/></li>
+            </ul>
+            <textarea class="output-table-html"></textarea>
+            <canvas></canvas>
+
+        </div>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
