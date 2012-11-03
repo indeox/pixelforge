@@ -30,6 +30,11 @@ header p {
     float: left;
     margin-top: 4px;
 }
+header a {
+    color: #999;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 .upload {
     width: 200px;
